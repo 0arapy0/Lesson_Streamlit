@@ -1,18 +1,17 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
-from PIL import Image
+#import pandas as pd
+#from PIL import Image
 
 st.title('Streamlit 超入門')
 st.write('DataFrame')
 
 
-'''
-df=pd.DataFrame({
-    '1列目':[1,2,3,4],
-    '2列目':[10,20,30,40]
-})
-'''
+# df=pd.DataFrame({
+#     '1列目':[1,2,3,4],
+#     '2列目':[10,20,30,40]
+# })
+
 #st.write(df)
 
 #動的なTable：DataFrame
@@ -25,15 +24,13 @@ df=pd.DataFrame({
 #st.table(df.style.highlight_max(axis=0))
 
 #折れ線グラフ
-'''
-df=pd.DataFrame(
-    np.random.rand(20,3),
-    columns=['a','b','c']
-)
-st.line_chart(df)
-st.area_chart(df)
-st.bar_chart(df)
-'''
+# df=pd.DataFrame(
+#     np.random.rand(20,3),
+#     columns=['a','b','c']
+# )
+# st.line_chart(df)
+# st.area_chart(df)
+# st.bar_chart(df)
 
 #地図表示
 df=pd.DataFrame(
@@ -44,10 +41,10 @@ st.map(df)
 
 
 #画像
-st.write('Display Iamge')
-img=Image.open('Lesson_Streamlit/IMG_6788.JPG')
-#st.image(img,caption='AAAA')
-st.image(img,caption='AAAA',use_column_width=True)
+# st.write('Display Iamge')
+# img=Image.open('Lesson_Streamlit/IMG_6788.JPG')
+# #st.image(img,caption='AAAA')
+# st.image(img,caption='AAAA',use_column_width=True)
 
 #マジックコマンド
 """
