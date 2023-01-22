@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-#import pandas as pd
+import pandas as pd
 #from PIL import Image
 
 st.title('Streamlit 超入門')
